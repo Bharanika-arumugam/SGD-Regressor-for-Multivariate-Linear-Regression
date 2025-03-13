@@ -8,10 +8,10 @@ To write a program to predict the price of the house and number of occupants in 
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
 ## Algorithm
-1. 
-2. 
-3. 
-4. 
+1. Load California housing data, select features and targets, and split into training and testing sets.
+2.Scale both X (features) and Y (targets) using StandardScaler.
+3.Use SGDRegressor wrapped in MultiOutputRegressor to train on the scaled training data.
+4.Predict on test data, inverse transform the results, and calculate the mean squared error
 
 ## Program:
 ```
@@ -47,10 +47,11 @@ print(y_pred)
 mse = mean_squared_error(y_test,y_pred)
 print("Mean Squared Error:",mse)
 print("\nPredictions:\n",y_pred[:5])
+
 ```
 
 ## Output:
-![WhatsApp Image 2025-03-13 at 08 15 38_1feeba12](https://github.com/user-attachments/assets/290d9908-a3fb-49b4-acc7-396cac44dd4d)
+![EX 4 ML](https://github.com/user-attachments/assets/9828e6ae-08e4-438b-af86-f1423dbe23be)
 
 
 ## Result:
